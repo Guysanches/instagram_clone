@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Instagram Clone" title="instagram_clone" src=".github\instagram_clone\assets\ic_instagram.svg"/>
+  <img alt="Instagram Clone" title="instagram_clone" src="assets/ic_instagram.svg"/>
 </h1>
 
 <h2 align="center">Instagram Responsivo Clone</h2>
