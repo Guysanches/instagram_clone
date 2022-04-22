@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+
 import 'app_constants.dart';
 
 ///Responsável por alterar o layout caso a largura seja maior que o valor webScreenSize
 ///Valor base utilizado 600
 
 class AppResponsiveLayout extends StatefulWidget {
-  final Widget mobileScreenLayout;
-  final Widget webScreenLayout;
+  final Widget mobileLayout;
+  final Widget webLayout;
 
   const AppResponsiveLayout({
     Key? key,
-    required this.mobileScreenLayout,
-    required this.webScreenLayout,
+    required this.mobileLayout,
+    required this.webLayout,
   }) : super(key: key);
 
   @override
@@ -23,9 +24,9 @@ class _AppResponsiveLayoutState extends State<AppResponsiveLayout> {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth > webScreenSize) {
-        return widget.webScreenLayout;
+        return widget.webLayout;
       }
-      return widget.mobileScreenLayout;
+      return widget.mobileLayout;
     });
   }
 }
